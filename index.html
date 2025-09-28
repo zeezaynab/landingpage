@@ -60,7 +60,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Fixed at 80% darkness */
+            background: rgba(0, 0, 0, 0.6); /* Fixed at 60% darkness */
             z-index: 0;
         }
 
@@ -155,7 +155,7 @@
             max-width: 80%;
         }
 
-        /* Color adjustment controls */
+        /* Color adjustment controls - HIDDEN VISUALLY */
         .color-controls {
             position: fixed;
             bottom: 20px;
@@ -166,6 +166,7 @@
             z-index: 100;
             color: white;
             font-size: 12px;
+            display: none; /* Hide the control box */
         }
 
         .color-controls h3 {
@@ -204,10 +205,6 @@
             .top-caption, .bottom-caption {
                 font-size: 14px;
                 letter-spacing: 4px;
-            }
-            
-            .color-controls {
-                display: none; /* Hide on mobile */
             }
         }
 
@@ -273,7 +270,7 @@
         </div>
     </div>
 
-    <!-- Color adjustment controls -->
+    <!-- Color adjustment controls - HIDDEN VISUALLY -->
     <div class="color-controls">
         <h3>Purple Animation Controls</h3>
         <div class="slider-container">
@@ -306,7 +303,7 @@
             let currentIntensity = 0;
             let increasing = true;
             
-            // Set darkness to fixed 80%
+            // Set darkness to fixed 60%
             document.querySelector('.dark-overlay').style.background = 'rgba(0, 0, 0, 0.6)';
             
             // Update purple overlay
@@ -409,3 +406,4 @@
     </script>
 </body>
 </html>
+           
